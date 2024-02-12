@@ -2,30 +2,28 @@
 <body>
 
     {{ hi }}
+ <br>
+   original name was {{ orig_name }} the title name is {{ name }}
 
-    {{ name }}
-
-<br>
-
-    {% for name in names_list %}
-    {{name}}
+   <ul>
+    {% for name in names %}
+    <li>{{ name }}</li>
     {% endfor %}
+   </ul>
+   The second name is {{names.1}}
 
-<p>
-    
-    {{names_list.0}}
+   <ul>
+        {% for name in fixed_names %}
+        <li>{{ name }}</li>
+        {% endfor %}
+   </ul>
 
-</p>
-
-
-
-below is cars information
-<p>
-
- Car 1 is the color {{car1.color}}
-
-</p>
-
-
+   <p>
+    car1 color: {{ car1.color }} makes sound: {{ car1.honk }} and has wheels: {{car1.wheels}}
+    <br>
+    car2 color: {{ car2.color }} makes sound: {{ car2.honk }} and has wheels: {{car2.wheels}}
+    <br>
+    motorcycle1 color: {{ motorcycle1.color }} makes sound: {{ motorcycle1.honk }} and has wheels: {{motorcycle1.wheels}}
+   </p>
 </body>
 </html>
