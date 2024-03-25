@@ -8,7 +8,7 @@
             "name": "Python Debugger: Django",
             "type": "debugpy",
             "request": "launch",
-            "program": "/Users/richie/Desktop/IS_4460/lab_7_orig/manage.py",
+            "program": "/Users/richie/Desktop/IS_4460/Lab_8/api/manage.py",
             "args": [
                 "runserver"
             ],
